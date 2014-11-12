@@ -1,0 +1,28 @@
+{
+  "name": "laravel-pirivi",
+  "version": "0.0.1",
+  "homepage": "https://github.com/arg0070/laravel-pirivi",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.4.7",
+    "font-awesome": "~4.2.0"
+  },
+  "install": {
+    "path": {
+      "css": "public/assets/css",
+      "js": "public/assets/js",
+      "otf" : "public/assets/fonts",
+      "eot" : "public/assets/fonts",
+      "svg" : "public/assets/fonts",
+      "ttf" : "public/assets/fonts",
+      "woff" : "public/assets/fonts"        
+    }
+  }
+}
