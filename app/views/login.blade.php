@@ -1,12 +1,12 @@
-<div class="small-6 large-6 column login-form">
-        {{ Form::open(['action' => 'BlogController@postLogin']) }}
+<div class="login-form">
+        {{ Form::open(['action' => 'IndexController@postLogin']) }}
         <fieldset>
             <legend>Login</legend>
-            {{ Form::label('username','Username') }}
-            {{ Form::text('username',Input::old('username'),['placeholder'=>'Your nice name']) }}
-            {{ Form::label('password','Password') }}
-            {{ Form::password('password',['placeholder'=>'Password here']) }}
-            {{ Form::submit('Login',['class'=>'button tiny radius']) }}
+            {{ Form::label('username','Usuario') }}
+            {{ Form::text('username',Input::old('username'),['placeholder'=>'Nombre de usuario']) }}
+            {{ Form::label('password','Contraseña') }}
+            {{ Form::password('password',['placeholder'=>'Contraseña']) }}
+            {{ Form::submit('Conectarse',['class'=>'button tiny radius']) }}
         </fieldset>
         {{ Form::close() }}
         @if($errors->has())

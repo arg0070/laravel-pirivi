@@ -1,4 +1,42 @@
+.top-bar{
+    background-color: inherit;
+    height:60px;
+}
 .top-bar .row{
     max-width:62.5rem;
+}
+.top-bar .name h1 a{
+    color:inherit;
+    display:inline;
+}
+.top-bar.expanded .title-area{
+    background-color: inherit;
+}
+.top-bar .toggle-topbar.menu-icon a{
+    color:#888;
+}
+
+#main-menu{
+    background-color: #fff;
+    width:100%;
+    padding-top:10px;
+}
+
+
+
+.subheader{
+background: rgb(31,94,107); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgb(31,94,107) 0%, rgb(32,110,122) 18%, rgb(33,133,145) 51%, rgb(79,167,176) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgb(31,94,107)), color-stop(18%,rgb(32,110,122)), color-stop(51%,rgb(33,133,145)), color-stop(100%,rgb(79,167,176))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgb(31,94,107) 0%,rgb(32,110,122) 18%,rgb(33,133,145) 51%,rgb(79,167,176) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgb(31,94,107) 0%,rgb(32,110,122) 18%,rgb(33,133,145) 51%,rgb(79,167,176) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgb(31,94,107) 0%,rgb(32,110,122) 18%,rgb(33,133,145) 51%,rgb(79,167,176) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgb(31,94,107) 0%,rgb(32,110,122) 18%,rgb(33,133,145) 51%,rgb(79,167,176) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f5e6b', endColorstr='#4fa7b0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+padding: 30px 0px;
+}
+.subheader h1, .subheader h2{
+    color: #fff;
 }
 

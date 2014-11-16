@@ -16,5 +16,5 @@
 	return View::make('hello');
 });
  */
-Route::get('/','IndexController@showIndex');
+Route::controller('/','IndexController');
 

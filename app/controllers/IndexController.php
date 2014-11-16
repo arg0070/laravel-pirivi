@@ -17,12 +17,56 @@
  */
 class IndexController extends BaseController {
 
-    /**
-     * Generates response from index.blade.php     
-     */
-    public function showIndex() {
-        $this->layout->title = 'Pirivi - Alquilar corporativo';
-        $this->layout->main = View::make('home')->nest('content', 'index');
+    public function __construct() {
+        //updated: prevents re-login.
+        $this->beforeFilter('guest', ['only' => ['getLogin']]);
+        $this->beforeFilter('auth', ['only' => ['getLogout']]);
+    }
+
+    public function getIndex() {
+        $this->layout->title = 'Pirivi - Alquiler colaborativo';
+        $this->layout->main = View::make('index');
+    }
+
+    public function getSearch() {
+        $searchTerm = Input::get('s');
+        $posts = Post::whereRaw('match(title,content) against(? in boolean mode)', [$searchTerm])
+                ->paginate(10);
+        $posts->getFactory()->setViewName('pagination::slider');
+        $posts->appends(['s' => $searchTerm]);
+        $this->layout->with('title', 'Search: ' . $searchTerm);
+        $this->layout->main = View::make('home')
+                ->nest('content', 'index', ($posts->isEmpty()) ? ['notFound' => true] : compact('posts'));
+    }
+
+    public function getLogin() {
+        $this->layout->title = 'login';
+        $this->layout->main = View::make('home')->nest('content', 'login');
+    }
+
+    public function postLogin() {
+        $credentials = [
+            'username' => Input::get('username'),
+            'password' => Input::get('password')
+        ];
+        $rules = [
+            'username' => 'required',
+            'password' => 'required'
+        ];
+        $validator = Validator::make($credentials, $rules);
+        if ($validator->passes()) {
+            if (Auth::attempt($credentials)) {
+                return Redirect::to('/');
+            }
+            return Redirect::back()->withInput()->with('failure', 'Usuario o contraaseña incorrecta');
+        } else {
+            return Redirect::back()->withErrors($validator)->withInput();
+        }
+    }
+
+    public function getLogout() {
+        Auth::logout();
+        return Redirect::to('/');
     }
 
 }
