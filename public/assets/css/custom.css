@@ -24,7 +24,7 @@
 
 
 
-.subheader{
+.mastersearch{
 background: rgb(31,94,107); /* Old browsers */
 background: -moz-linear-gradient(-45deg,  rgb(31,94,107) 0%, rgb(32,110,122) 18%, rgb(33,133,145) 51%, rgb(79,167,176) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgb(31,94,107)), color-stop(18%,rgb(32,110,122)), color-stop(51%,rgb(33,133,145)), color-stop(100%,rgb(79,167,176))); /* Chrome,Safari4+ */
@@ -36,10 +36,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f5e6b', end
 
 padding: 30px 0px;
 }
-.subheader h1, .subheader h2{
+.mastersearch h1, .mastersearch h2{
     color: #fff;
 }
 
-article.item{
-    display:inline;
+.site-footer{
+    background-color: #3a3a3a;
+    border-top: 3px solid rgb(79,167,176);
+    color: #fff;            
 }
+
+.site-footer ul li a{
+    color:inherit;
+    font-size: 12px;
+}
+.site-footer h3 a{
+    color:#fff;
+}
+

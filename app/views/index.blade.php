@@ -1,9 +1,9 @@
-<div class="subheader">
+<div class="mastersearch">
     <div class="row">
         <div class="large-12 columns">
             <hgroup>
                 <h1>Busca todo lo que necesitas.</h1>
-                <h2>El objeto que deseas a solo un click de distancia.</h2>
+                <h2>El <u><strong>alquiler más cercano</strong></u> a un solo click de distancia.</h2>
             </hgroup>
             <form>
                 <div class="row collapse postfix-round">
@@ -16,6 +16,10 @@
                 </div>
             </form>
         </div>
+        <ul class="small-block-grid-3"> 
+            <li><p>Alquiler cercano</p></li> 
+            <li><p>Precios racionales</p></li> 
+            <li><p>Sercio personalizado</p></li> </ul>
     </div>
 </div>
 

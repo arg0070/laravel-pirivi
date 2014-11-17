@@ -24,8 +24,8 @@ class IndexController extends BaseController {
     }
 
     public function getIndex() {
-        $items = Item::orderBy('id', 'desc')->paginate(10);
-        $items->getFactory()->setViewName('pagination::simple');
+        $items = Item::orderBy('id', 'desc')->paginate(9);
+        $items->getFactory()->setViewName('pagination::slider');
         $this->layout->title = 'Pirivi - Alquiler colaborativo';
         $this->layout->main = View::make('index')->nest('content', 'items',compact('items'));
     }
