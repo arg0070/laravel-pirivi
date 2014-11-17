@@ -16,6 +16,10 @@
 	return View::make('hello');
 });
  */
-Route::controller('/','IndexController');
-Route::get('/item/{post}/', ['as' => 'item.show', 'uses' => 'ItemController@showItem']);
+Route::model('item', 'Item');
 
+
+
+Route::get('/item/{item}', ['as' => 'item.show', 'uses' => 'ItemController@showItem']);
+
+Route::controller('/','IndexController');

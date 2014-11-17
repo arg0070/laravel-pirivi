@@ -12,7 +12,7 @@
 
 @foreach($items as $item)
 <div class="large-4 column">
-    <p>{{$item->name}}</p>
+    <p>{{link_to_route('item.show',$item->name,$item->id)}}</p>
     <a class="th" role="button" aria-label="Thumbnail" href="#"> <img aria-hidden=true src="http://placehold.it/300x300"/> </a>
     </div>
 @endforeach

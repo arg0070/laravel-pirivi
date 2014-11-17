@@ -22,7 +22,9 @@
                         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
                         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
                     </ul>
-                    <section class="top-bar-section">
+                  
+                    <section class="top-bar-section">                                                
+
                         <!-- Right Nav Section -->
                         <ul class="right">
                             @if(Auth::check())
@@ -51,33 +53,33 @@
 
         {{$main}}
 
-        
-                <footer class="site-footer">
-                    <div class="row">
-                        <div class="small-12 large-2 column">
-                            <h3>{{HTML::image('media/logo.jpg')}} {{HTML::link('/','Piriví')}}</h3>
-                        </div>
-                        <div class="small-12 large-2 column">
-                            <ul class="inline-list">
-                                <li><span class="fa fa-twitter-square fa-2x"></span></li>
-                                <li><span class="fa fa-facebook-square fa-2x"></span></li>
-                                <li><span class="fa fa-google-plus-square fa-2x"></span></li>
-                            </ul>
-                        </div>
-            <div class="small-12 large-8 column end">                
-                <ul class="inline-list">
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Información legal</a></li>
-                    <li><a href="#">Condiciones del servicio</a></li>
-                    <li><a href="#">Centro se soporte</a></li>
-                </ul>
-                
-                
-                    </div>
-                        
-        </div>
-                </footer>
-            
+
+        <footer class="site-footer">
+            <div class="row">
+                <div class="small-12 large-2 column">
+                    <h3>{{HTML::image('media/logo.jpg')}} {{HTML::link('/','Piriví')}}</h3>
+                </div>
+                <div class="small-12 large-2 column">
+                    <ul class="inline-list">
+                        <li><span class="fa fa-twitter-square fa-2x"></span></li>
+                        <li><span class="fa fa-facebook-square fa-2x"></span></li>
+                        <li><span class="fa fa-google-plus-square fa-2x"></span></li>
+                    </ul>
+                </div>
+                <div class="small-12 large-8 column end">                
+                    <ul class="inline-list">
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Información legal</a></li>
+                        <li><a href="#">Condiciones del servicio</a></li>
+                        <li><a href="#">Centro se soporte</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </footer>
+
         {{ HTML::script('assets/js/jquery/jquery.js') }}
         {{ HTML::script('assets/js/foundation/foundation.js') }}
         <script>

@@ -22,6 +22,11 @@ class ItemController extends BaseController {
     public function showItem(Item $item)
     {      
         $this->layout->title = $item->name;
-        $this->layout->main = View::make('home')->nest('content', 'posts.single');
+        $this->layout->main = View::make('home')->nest('content', 'single', compact('item'));
     }
+    public function showIndex(){
+     $this->layout->title = 'Pirivi - Alquiler colaborativo';
+        $this->layout->main = View::make('home')->nest('content', 'sidebar');
 }
+
+    }
