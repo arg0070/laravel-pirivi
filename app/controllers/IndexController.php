@@ -24,19 +24,21 @@ class IndexController extends BaseController {
     }
 
     public function getIndex() {
+        $items = Item::orderBy('id', 'desc')->paginate(10);
+        $items->getFactory()->setViewName('pagination::simple');
         $this->layout->title = 'Pirivi - Alquiler colaborativo';
-        $this->layout->main = View::make('index');
+        $this->layout->main = View::make('index')->nest('content', 'items',compact('items'));
     }
 
     public function getSearch() {
         $searchTerm = Input::get('s');
-        $posts = Post::whereRaw('match(title,content) against(? in boolean mode)', [$searchTerm])
+        $items = Item::whereRaw('match(title,content) against(? in boolean mode)', [$searchTerm])
                 ->paginate(10);
-        $posts->getFactory()->setViewName('pagination::slider');
-        $posts->appends(['s' => $searchTerm]);
+        $items->getFactory()->setViewName('pagination::slider');
+        $items->appends(['s' => $searchTerm]);
         $this->layout->with('title', 'Search: ' . $searchTerm);
         $this->layout->main = View::make('home')
-                ->nest('content', 'index', ($posts->isEmpty()) ? ['notFound' => true] : compact('posts'));
+                ->nest('content', 'index', ($items->isEmpty()) ? ['notFound' => true] : compact('posts'));
     }
 
     public function getLogin() {

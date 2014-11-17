@@ -17,4 +17,5 @@
 });
  */
 Route::controller('/','IndexController');
+Route::get('/item/{post}/', ['as' => 'item.show', 'uses' => 'ItemController@showItem']);
 

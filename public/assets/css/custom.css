@@ -40,3 +40,6 @@ padding: 30px 0px;
     color: #fff;
 }
 
+article.item{
+    display:inline;
+}
