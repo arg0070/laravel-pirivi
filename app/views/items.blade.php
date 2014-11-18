@@ -3,11 +3,10 @@
 <p>Sorry nothing found for your query!</p>
 @else
 <dl class="sub-nav">
-    <dt>Filter:</dt>
-    <dd class="active"><a href="#">All</a></dd>
-    <dd><a href="#">Active</a></dd>
-    <dd><a href="#">Pending</a></dd>
-    <dd><a href="#">Suspended</a></dd>
+    <dt>Categorías:</dt>
+    <dd class="active"><a href="#">Todas</a></dd>
+    <dd><a href="#">Tecnología</a></dd>
+    <dd><a href="#">Deporte</a></dd>
 </dl>
 
 @foreach($items as $item)

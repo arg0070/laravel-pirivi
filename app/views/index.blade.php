@@ -16,14 +16,26 @@
                 </div>
             </form>
         </div>
-        <ul class="small-block-grid-3"> 
-            <li><p>Alquiler cercano</p></li> 
-            <li><p>Precios racionales</p></li> 
-            <li><p>Sercio personalizado</p></li> </ul>
+
+        <div class="large-4 columns points">
+            <i class="fa fa-map-marker fa-4x"></i>                   
+            <h3>Alquiler cercano</h3>
+            <p>Encuentra lo que buscas cerca de ti</p>
+        </div>
+        <div class="large-4 columns points">    
+            <i class="fa fa-euro fa-4x"></i>                     
+            <h3>Precios racionales</h3>
+            <p>Prueba antes de comprar</p>
+        </div>
+        <div class="large-4 columns points">
+            <i class="fa fa-send fa-4x"></i>                   
+            <h3>Servicio personalizado</h3>
+            <p>Sistema de reputación</p>
+        </div>
     </div>
 </div>
 
 <div class="row">
-{{$content}}
-    
+    {{$content}}
+
 </div>
