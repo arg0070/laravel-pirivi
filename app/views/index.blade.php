@@ -28,9 +28,9 @@
             <p>Prueba antes de comprar</p>
         </div>
         <div class="large-4 columns points">
-            <i class="fa fa-send fa-4x"></i>                   
-            <h3>Servicio personalizado</h3>
-            <p>Sistema de reputación</p>
+            <i class="fa fa-lock fa-4x"></i>                   
+            <h3>Seguridad y confianza</h3>
+            <p>Sistema de reputación verificado</p>
         </div>
     </div>
 </div>

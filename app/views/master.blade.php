@@ -71,7 +71,7 @@
                     <footer class="site-footer">
                         <div class="row">
                             <div class="small-12 large-2 column">
-                                <h3>{{HTML::image('media/logo.jpg')}} {{HTML::link('/','Piriví')}}</h3>
+                                <h3>{{HTML::image('media/logo.png')}} {{HTML::link('/','Piriví')}}</h3>
                             </div>
                             <div class="small-12 large-2 column">
                                 <ul class="inline-list">

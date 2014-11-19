@@ -21,5 +21,5 @@ Route::model('item', 'Item');
 
 
 Route::get('/item/{item}', ['as' => 'item.show', 'uses' => 'ItemController@showItem']);
-
+Route::get('rent', ['as' =>'rent.quest', 'uses' =>'ItemController@showQuest']);
 Route::controller('/','IndexController');

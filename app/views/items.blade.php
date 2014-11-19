@@ -13,7 +13,7 @@
 <div class="large-4 column">
     <h4>{{link_to_route('item.show',$item->name,$item->id)}}</h4>
     <a class="th" role="button" aria-label="Thumbnail" href="#"> 
-        <img aria-hidden=true src="http://placehold.it/300x300"/> 
+        {{HTML::image('media/'.$item->id.'min.jpg')}} 
     </a>
     <div class="filter">
         <span class="success radius label right">{{$item->price_day}} <i class="fa fa-euro"></i>/día</span>

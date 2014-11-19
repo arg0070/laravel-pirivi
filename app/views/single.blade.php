@@ -14,29 +14,29 @@
             <div class="carousel-inner cont-slider">
 
                 <div class="item active">
-                    <img alt="" title="" src="http://placehold.it/600x400">
+                    {{HTML::image('media/'.$item->id.'min.jpg')}}
                 </div>
 
             </div>
             <!-- Indicators -->
             <ul class="carousel-indicators no-bullet">
                 <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
-                    <img alt="" src="http://placehold.it/250x180">
+                    {{HTML::image('media/min4.jpg')}}
                 </li>
                 <li class="" data-slide-to="1" data-target="#article-photo-carousel">
-                    <img alt="" src="http://placehold.it/250x180">
+                    {{HTML::image('media/min3.jpg')}}
                 </li>
                 <li class="" data-slide-to="2" data-target="#article-photo-carousel">
-                    <img alt="" src="http://placehold.it/250x180">
+                    {{HTML::image('media/min2.jpg')}}
                 </li>
                 <li class="" data-slide-to="3" data-target="#article-photo-carousel">
-                    <img alt="" src="http://placehold.it/250x180">
+                   {{HTML::image('media/min1.jpg')}}
                 </li>
             </ul>
         </div>
         <div class="clearfix"></div>
 
-        <p>{{ $item->description }}</p>
+        {{ $item->description }}
         <table> 
             <thead> 
                 <tr> 
@@ -53,8 +53,14 @@
                     <td>{{$item->price_weekend}}</td>
                     v<td>{{$item->price_month}}</td>
                 </tr> </tbody> </table>
+        <div>
+            {{HTML::image('media/mapa.jpg')}}
+            <p></p>
+         
+        </div>
     </div>
     <footer class="post-footer">
-        <a href="#" class="button expand sucess">¡Alquilar!</a>
+        {{HTML::linkRoute('rent.quest', '¡Alquilar!', null,'class="button expand sucess"')}}
+
     </footer>
 </article>

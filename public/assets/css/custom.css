@@ -164,3 +164,27 @@
     margin-left:3px;
     color: #fff;
 }
+.sidebar{
+    margin-top:100px;
+}
+.ImageBlock {
+    position: relative;
+    padding: 0px;
+}
+.ImageBlock .ibImg img{
+    position: absolute;
+    width: 50px;
+    height:50px;
+}
+.ImageBlock .ibContent {
+    padding: 0px 8px 0px 55px;
+    font-size: 14px;
+}
+.cNameLink {
+    display: block;
+    font-weight: 700;
+}
+.Comment {
+    margin: 0px 0px 8px;
+}
+

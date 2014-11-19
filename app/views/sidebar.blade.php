@@ -1,5 +1,15 @@
-{{HTML::image('http://placehold.it/150x150')}}
-<p>Nombre de usuario</p>
+<div class="small-12 large-12 column panel">
+    <div class="large-6 small-12 column">
+        {{HTML::image('/media/user.jpg')}}
+    </div>
+
+<div class="large-6 small-12 column">
+    <a href="#">@martamartinez</a>
+    <p><i class="fa fa-map-marker"></i> Burgos </p>
+    
+ 
+</div>
+</div>
 
 
 <h3>Valoración del usuario</h3>
@@ -83,9 +93,55 @@
 
 <h3>Comentarios al usuario</h3>
 <div class="large-12 small-12 column comment-line">
-    <div class="user-profile">
-        <p><i class="fa fa-user"></i> Pepito Pérez</p>
+    <div class="ImageBlock Comment">
+        <div class="ibImg">
+            {{HTML::image('media/user1.jpg')}}
+        </div>
+        <div class="ibContent">
+            <a href="#" class="cNameLink">Sara Saéz</a>
+            <span><small> 2014/11/16
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i></small></span>
+            <br/>
+            <span>Todo perfecto</span>
+        </div>        
+    </div>
+    <div class="ImageBlock Comment">
+        <div class="ibImg">
+            {{HTML::image('media/user2.jpg')}}
+        </div>
+        <div class="ibContent">
+            <a href="#" class="cNameLink">Marcos Martín</a>
+            <span><small> 2014/11/16
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i></small></span>
+                    <br/>
+            <span>Falta de puntualidad</span>
+        </div>        
     </div>    
-        <blockquote>Todo perfecto</blockquote>
+    <div class="ImageBlock Comment">
+        <div class="ibImg">
+            {{HTML::image('media/user3.jpg')}}
+        </div>
+        <div class="ibContent">
+            <a href="#" class="cNameLink">Laura López</a>
+            <span><small> 2014/11/16
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-0"></i>
+                    <i class="fa fa-star-0"></i></small></span>
+                    <br/>
+            <span>Desperfectos en el objeto</span>
+        </div>        
+    </div>    
+    <a href="#" class="button small">Ver todos los comentarios</a>    
+        
 
 </div>
