@@ -1,4 +1,13 @@
 {{-- home page --}}
+<div class="breadnav">
+    <div class="row">
+    <ul class="breadcrumbs"> 
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Tecnología</a></li>        
+        <li class="current"><a href="#">Subcategoría 1</a></li>
+    </ul>
+    </div>
+</div>
 <div class="row">
 <div class="small-12 large-8 column">
   <div class="content">

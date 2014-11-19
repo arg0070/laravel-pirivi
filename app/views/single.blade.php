@@ -4,7 +4,7 @@
             {{$item->name}}
         </h1>
         <div class="clearfix">
-            <span class="left date">{{explode(' ',$item->created_at)[0]}}</span>
+            Fecha de creación: <span class="date">{{explode(' ',$item->created_at)[0]}}</span>
         </div>
     </header>
     <div class="post-content">
@@ -34,10 +34,27 @@
                 </li>
             </ul>
         </div>
+        <div class="clearfix"></div>
 
         <p>{{ $item->description }}</p>
+        <table> 
+            <thead> 
+                <tr> 
+                    <th>Precio por día</th>
+                    <th>Precio por semana</th>
+                    <th>Precio por fin de semana</th>
+                    <th>Precio por mes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{$item->price_day}}</td>
+                    <td>{{$item->price_week}}</td>
+                    <td>{{$item->price_weekend}}</td>
+                    v<td>{{$item->price_month}}</td>
+                </tr> </tbody> </table>
     </div>
     <footer class="post-footer">
-        <hr>
+        <a href="#" class="button expand sucess">¡Alquilar!</a>
     </footer>
 </article>
