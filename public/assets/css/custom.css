@@ -31,7 +31,7 @@
     color: #fff;
 }
 .left-small, .right-small{
-    border: none;    
+    border: none;
 }
 
 .tab-bar .menu-icon span:after{
@@ -70,7 +70,7 @@
 .site-footer{
     background-color: #3a3a3a;
     border-top: 3px solid rgb(79,167,176);
-    color: #fff;            
+    color: #fff;
 }
 
 .site-footer ul li a{
@@ -134,12 +134,12 @@
     opacity: 0.7;
 }
 
-.filter > span {   
-    vertical-align: -50px;   
+.filter > span {
+    vertical-align: -50px;
     position: absolute;
-    font-size: 25px;    
+    font-size: 25px;
     line-height: 50px;
-    bottom: 0px;  
+    bottom: 0px;
 }
 .breadcrumbs {
 
@@ -151,14 +151,14 @@
     border-style: solid;
     border-width: 1px;
     background-color: #F4F4F4;
-    border-color: #DCDCDC;   
+    border-color: #DCDCDC;
 }
 
 
 
 .rating .fa {font-size: 22px;}
 .rating-num { margin-top:0px;font-size: 54px; }
-.sr-only { 
+.sr-only {
     position:absolute;
     top:0px;
     margin-left:3px;
@@ -187,4 +187,13 @@
 .Comment {
     margin: 0px 0px 8px;
 }
-
+.alert-warning {
+    color: #8A6D3B;
+    background-color: #FCF8E3;
+    border-color: #FAEBCC;
+}
+.alert {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
